@@ -1,11 +1,12 @@
-import 'package:equatable/equatable.dart';
+import 'package:ttd_project/core/utils/typedef.dart';
 
-abstract class  AuthenticationReposistory {
- 
+abstract class AuthenticationReposistory {
+  const AuthenticationReposistory();
 
- const AuthenticationReposistory();
+  ResultFuture createUser(
+      {required String name,
+      required String createdAt,
+      required String avatar});
 
- Future(<>) createUser({required String name,required String createdAt ,String avatar}){
-
- }
+  ResultVoid getUser();
 }
