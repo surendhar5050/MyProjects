@@ -1,12 +1,13 @@
 import 'package:ttd_project/core/utils/typedef.dart';
+import 'package:ttd_project/src/authencation/domain/entities/user.dart';
 
 abstract class AuthenticationReposistory {
   const AuthenticationReposistory();
 
-  ResultFuture createUser(
+  ResultVoid createUser(
       {required String name,
       required String createdAt,
       required String avatar});
 
-  ResultVoid getUser();
+  ResultFuture<List<User>> getUser();
 }
