@@ -49,7 +49,6 @@ class AuthMethods {
             photoUrl: downLoadurl,
             followers: [],
             following: []);
-
         await firestore
             .collection('users')
             .doc(cred.user!.uid)
@@ -89,7 +88,7 @@ class AuthMethods {
     return res;
   }
 
-signOut()async{
-await _auth.signOut();
-}
+  signOut() async {
+    await _auth.signOut();
+  }
 }

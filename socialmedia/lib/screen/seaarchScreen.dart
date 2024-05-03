@@ -28,6 +28,8 @@ class _SearchScreenState extends State<SearchScreen> {
     });
     return FirebaseFirestore.instance
         .collection('users')
+
+
         .where('userName', isGreaterThanOrEqualTo: textEditingController.text)
         .get();
   }

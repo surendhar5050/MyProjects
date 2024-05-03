@@ -1,5 +1,7 @@
-import 'package:counterapp_unittesting/user_screen.dart';
+import 'package:counterapp_unittesting/user_widget_testing.dart/user_reposistory.dart';
 import 'package:flutter/material.dart';
+
+import 'user_widget_testing.dart/user_home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: const CounterApp(title: 'Flutter Demo Home Page'),
 
-      home:  const UserScreen(),
+      home:   UserScreen(users: UserRepository().getUSer()),
     );
   }
 }

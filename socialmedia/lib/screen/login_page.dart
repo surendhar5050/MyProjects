@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:socialmedia/resorces/auth_methods.dart';
 import 'package:socialmedia/responsive/mobileScreen.dart';
 import 'package:socialmedia/responsive/reponsive_layout_screen.dart';
@@ -70,11 +69,11 @@ class _LoginPageState extends State<LoginPage> {
               flex: 2,
             ),
             // ignore: deprecated_member_use
-            SvgPicture.asset(
-              'assets/images/ic_instagram.svg',
-              color: primaryColor,
-              height: 64,
-            ),
+            // SvgPicture.asset(
+            //   'assets/images/ic_instagram.svg',
+            //   color: primaryColor,
+            //   height: 64,
+            // ),
             const SizedBox(
               height: 64.0,
             ),

@@ -18,6 +18,7 @@ class Storagemethods {
       String id = const Uuid().v1();
       _ref = _ref.child(id);
     }
+
     UploadTask _task = _ref.putData(file);
 
     TaskSnapshot _taskSnapSnot = await _task;

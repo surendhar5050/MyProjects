@@ -1,7 +1,6 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:socialmedia/resorces/auth_methods.dart';
 import 'package:socialmedia/responsive/mobileScreen.dart';
@@ -85,11 +84,11 @@ class _SignUpPageState extends State<SignUpPage> {
               //   flex: 2,
               // ),
               // ignore: deprecated_member_use
-              SvgPicture.asset(
-                'assets/images/ic_instagram.svg',
-                color: primaryColor,
-                height: 64,
-              ),
+              // SvgPicture.asset(
+              //   'assets/images/ic_instagram.svg',
+              //   color: primaryColor,
+              //   height: 64,
+              // ),
               const SizedBox(
                 height: 64.0,
               ),
